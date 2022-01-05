@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1 class="display-1 text-center">Formulário de currículo</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <fieldset class="container">
+                <label>Nome Completo:
+                    <input type="text" name="nome" placeholder="Digite seu nome" min=0 max=40 required>
+                </label>
+                <br>
+                <label>Email:
+                    <input type="email" name="email" placeholder="Digite seu email" min=0 max=50 required>
+                </label>
+                <br>
+                <label>CPF:
+                    <input type="text" name="cpf" placeholder="Digite seu CPF" min=0 max=11 required>
+                </label>
+                <br>
+                <label>Endereço:
+                    <input type="text" name="endereço" placeholder="Digite seu endereço" min=0 max=200 required>
+                </label>
+                <br>
+                <label>Cidade:
+                    <input type="text" name="cidade" placeholder="Digite sua cidade" min=0 max=28 required>
+                </label>
+                <br>
+                <label>Estado:
+                    <select name="Estado" id="select" required>
+                </label>
+                <br>
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Casa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Apartamento
+                    </label>
+                </div>
+                    
+            </fieldset>
+            <br>
+            <fieldset class="container">
+                <label>
+                    <textarea minlength="0" maxlength="1000" cols="50" rows="20"
+                        placeholder="Insira um breve resumo do currículo" required></textarea>
+                </label>
+                <br>
+                <label>Cargo:
+                    <input type="text" name="cargo" placeholder="Digite seu cargo" min=0 max=40 required>
+                </label>
+                <br>
+                <label>Descrição do cargo:
+                    <input type="text" name="descrição-cargo" placeholder="Descreva seu cargo" min=0 max=500 required>
+                </label>
+                <label>Início
+                    <input type="date" name="" id="">
+                </label>
+                
+            </fieldset>
+            <button class="btn btn-dark" id="button1" type="submit">Enviar</button>
+            <button class="btn btn-info" id="button2" type="reset">Limpar</button>
+        </form>
+        
+    </main>
+    <script src="dist/js/DatePickerX.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
