@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de currículo</h1>
+    </header>
+    <main>
+        <form action="" method="GET">
+            <fieldset>
+                <label>Nome Completo:
+                    <input type="text" name="nome" placeholder="Digite seu nome" min=0 max=40 required>
+                </label>
+                <br>
+                <label>Email:
+                    <input type="email" name="email" placeholder="Digite seu email" min=0 max=50 required>
+                </label>
+                <br>
+                <label>CPF:
+                    <input type="text" name="cpf" placeholder="Digite seu CPF" min=0 max=11 required>
+                </label>
+                <br>
+                <label>Endereço:
+                    <input type="text" name="endereço" placeholder="Digite seu endereço" min=0 max=200 required>
+                </label>
+                <br>
+                <label>Cidade:
+                    <input type="text" name="cidade" placeholder="Digite sua cidade" min=0 max=28 required>
+                </label>
+                <br>
+                <label>Estado:
+                    <select name="Estado" id="select" required>
+
+                </label>
+                <br>
+                    <legend> Lotação: </legend>
+                    <label for="casa">
+                        <input type="radio" name="local" id="casa" required> Casa </input>
+                    </label>
+                    <label for="apartamento">
+                        <input type="radio" name="local" id="apartamento" required> Apartamento </input>
+                    </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>
+                    <textarea minlength="0" maxlength="1000" cols="50" rows="20"
+                        placeholder="Insira um breve resumo do currículo" required></textarea>
+                </label>
+                <br>
+                <label>Cargo:
+                    <input type="text" name="cargo" placeholder="Digite seu cargo" min=0 max=40 required>
+                </label>
+                <br>
+                <label>Descrição do cargo:
+                    <input type="text" name="descrição-cargo" placeholder="Descreva seu cargo" min=0 max=500 required>
+                </label>
+                <label>Início
+                    <input type="date" name="" id="">
+                </label>
+                
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
