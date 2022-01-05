@@ -1,0 +1,20 @@
+body {
+    background-color: aquamarine;
+}
+
+#button1 {
+    margin-left: 120px;
+}
+
+#button2 {
+    margin-left: 10px;
+}
+
+h1 {
+    color:indigo
+}
+
+#select {
+    display: inline-block;
+    
+}
